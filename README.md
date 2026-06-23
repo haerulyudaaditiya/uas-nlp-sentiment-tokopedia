@@ -2,6 +2,7 @@
 ## Klasifikasi Sentimen Ulasan Produk Tokopedia (PRDECT-ID Dataset)
 
 * **Tautan Aplikasi Streamlit:** [https://uas-nlp-sentiment-tokopedia.streamlit.app/](https://uas-nlp-sentiment-tokopedia.streamlit.app/)
+* **Tautan Repositori GitHub:** [https://github.com/haerulyudaaditiya/uas-nlp-sentiment-tokopedia](https://github.com/haerulyudaaditiya/uas-nlp-sentiment-tokopedia)
 
 Proyek ini dibangun untuk memenuhi persyaratan Ujian Akhir Semester (UAS) Pemrosesan Bahasa Alami. Tujuan proyek ini adalah melakukan klasifikasi sentimen (Positif dan Negatif) pada ulasan produk Tokopedia berbahasa Indonesia dengan menggunakan representasi TF-IDF dan model pembelajaran mesin (Machine Learning) yang menggabungkan fitur teks ulasan dan Customer Rating.
 
