@@ -5,13 +5,7 @@ Proyek ini dibangun untuk memenuhi persyaratan Ujian Akhir Semester (UAS) Pemros
 
 ---
 
-## 1. Anggota Tim / Identitas Mahasiswa
-* **Nama:** Haerulyuda Aditiya
-* **UAS:** Pemrosesan Bahasa Alami - Klasifikasi Sentimen
-
----
-
-## 2. Struktur Direktori Proyek
+## 1. Struktur Direktori Proyek
 
 ```text
 UAS/
@@ -42,7 +36,7 @@ UAS/
 
 ---
 
-## 3. Instalasi dan Persiapan Dependensi
+## 2. Instalasi dan Persiapan Dependensi
 
 Pastikan python3 dan virtualenv telah terpasang di sistem. Untuk mempersiapkan lingkungan virtual dan dependensi, jalankan perintah berikut di terminal:
 
@@ -56,11 +50,11 @@ pip install pandas numpy scikit-learn Sastrawi joblib streamlit wordcloud matplo
 
 ---
 
-## 4. Cara Menjalankan Jupyter Notebook
+## 3. Cara Menjalankan Jupyter Notebook
 
 File `uas_nlp_notebook.ipynb` berisi alur lengkap dari awal sampai akhir, termasuk visualisasi data, pembersihan teks, normalisasi slang/singkatan, penyaringan stopwords selektif (mempertahankan kata negasi dan kontras), pelatihan model, evaluasi performa, dan penyimpanan model terbaik.
 
-Sebagai keputusan rekayasa senior (*Senior-grade design decision*), proses **stemming ditiadakan** dalam pipeline akhir. Hal ini didasarkan pada temuan bahwa stemming Sastrawi mereduksi imbuhan krusial (seperti *ter-* dalam *terbaik*, atau *mengecewakan*) yang bernilai emosional tinggi, sekaligus memperlambat performa komputasi. Tanpa stemming, proses training dan inferensi berjalan secara instan (< 1 md) dan akurasi model meningkat signifikan.
+Sebagai keputusan rekayasa senior (*Senior-grade design decision*), proses **stemming ditiadaan** dalam pipeline akhir. Hal ini didasarkan pada temuan bahwa stemming Sastrawi mereduksi imbuhan krusial (seperti *ter-* dalam *terbaik*, atau *mengecewakan*) yang bernilai emosional tinggi, sekaligus memperlambat performa komputasi. Tanpa stemming, proses training dan inferensi berjalan secara instan (< 1 md) dan akurasi model meningkat signifikan.
 
 Untuk membuka dan menjalankannya:
 1. Pastikan virtual environment aktif.
@@ -72,7 +66,7 @@ Untuk membuka dan menjalankannya:
 
 ---
 
-## 5. Cara Menjalankan Aplikasi Web Streamlit
+## 4. Cara Menjalankan Aplikasi Web Streamlit
 
 Aplikasi Streamlit (`app.py`) menyediakan antarmuka web interaktif yang ramah pengguna. Aplikasi memuat model klasifikasi terbaik yang telah disimpan untuk melakukan prediksi sentimen.
 
@@ -87,7 +81,7 @@ Untuk menjalankan aplikasi:
 
 ---
 
-## 6. Ringkasan Hasil Evaluasi Model
+## 5. Ringkasan Hasil Evaluasi Model
 
 Model dievaluasi menggunakan pembagian data *Stratified Train-Test Split* (80% Train, 20% Test). Berikut adalah hasil performa model terbaik setelah dioptimalkan (tanpa stemming, memelihara kata negasi, serta menggabungkan TF-IDF teks & Customer Rating):
 
