@@ -1,6 +1,8 @@
 # Proyek UAS Pemrosesan Bahasa Alami (NLP)
 ## Klasifikasi Sentimen Ulasan Produk Tokopedia (PRDECT-ID Dataset)
 
+* **Tautan Aplikasi Streamlit:** [https://uas-nlp-sentiment-tokopedia.streamlit.app/](https://uas-nlp-sentiment-tokopedia.streamlit.app/)
+
 Proyek ini dibangun untuk memenuhi persyaratan Ujian Akhir Semester (UAS) Pemrosesan Bahasa Alami. Tujuan proyek ini adalah melakukan klasifikasi sentimen (Positif dan Negatif) pada ulasan produk Tokopedia berbahasa Indonesia dengan menggunakan representasi TF-IDF dan model pembelajaran mesin (Machine Learning) yang menggabungkan fitur teks ulasan dan Customer Rating.
 
 ---
@@ -71,7 +73,12 @@ Untuk membuka dan menjalankannya:
 
 Aplikasi Streamlit (`app.py`) menyediakan antarmuka web interaktif yang ramah pengguna. Aplikasi memuat model klasifikasi terbaik yang telah disimpan untuk melakukan prediksi sentimen.
 
-Untuk menjalankan aplikasi:
+### 4.1 Menjalankan Aplikasi Secara Online (Live App)
+Aplikasi ini telah dideploy secara publik di Streamlit Cloud dan dapat langsung diakses melalui:
+* **Tautan Aplikasi Streamlit Cloud:** [https://uas-nlp-sentiment-tokopedia.streamlit.app/](https://uas-nlp-sentiment-tokopedia.streamlit.app/)
+
+### 4.2 Menjalankan Aplikasi Secara Lokal
+Untuk menjalankan aplikasi di komputer lokal:
 1. Pastikan virtual environment aktif.
 2. Jalankan perintah berikut di terminal:
    ```bash
