@@ -31,6 +31,7 @@ UAS/
 │       ├── wordcloud_negative.png
 │       └── wordcloud_positive.png
 ├── uas_nlp_notebook.ipynb      # Jupyter Notebook lengkap berisi visualisasi & proses training
+├── requirements.txt            # Dependensi untuk deployment Streamlit Cloud
 └── venv/                       # Python Virtual Environment
 ```
 
